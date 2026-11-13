@@ -36,7 +36,7 @@ services:
     image: mysql:8.4
     network_mode: host
     environment:
-      MYSQL_DATABASE: product
+      MYSQL_DATABASE: app
       MYSQL_ROOT_PASSWORD: password
     volumes:
       - ./backend/docker/init.sql:/docker-entrypoint-initdb.d/init.sql

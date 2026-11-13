@@ -11,7 +11,7 @@ containers:
     port: 3001
     env:
       FASTAPI_DB_HOST: 127.0.0.1
-      FASTAPI_DB_NAME: product
+      FASTAPI_DB_NAME: app
       FASTAPI_DB_PASSWORD: "strongPassword?"
       FASTAPI_DB_PORT: "3306"
       FASTAPI_DB_USER: tda_user
@@ -20,7 +20,7 @@ containers:
     image: mysql
     tag: "8.4"
     env:
-      MYSQL_DATABASE: product
+      MYSQL_DATABASE: app
       MYSQL_ROOT_PASSWORD: password
     port: 3306
   - name: caddy

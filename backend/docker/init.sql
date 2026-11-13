@@ -1,5 +1,5 @@
 -- init.sql
-CREATE DATABASE IF NOT EXISTS product;
+CREATE DATABASE IF NOT EXISTS app;
 CREATE USER IF NOT EXISTS 'tda_user'@'%' IDENTIFIED BY 'strongPassword?';
-GRANT ALL PRIVILEGES ON product.* TO 'tda_user'@'%';
+GRANT ALL PRIVILEGES ON app.* TO 'tda_user'@'%';
 FLUSH PRIVILEGES;
